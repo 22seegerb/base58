@@ -47,7 +47,7 @@ def main() -> None:
     try:
         result = fun(data)
     except Exception as e:
-        sys.exit(e)
+        sys.exit(e.args[0])
 
     stdout.write(result)
 
