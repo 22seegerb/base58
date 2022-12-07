@@ -28,7 +28,7 @@ jobs:
 
       - name: Run MyPy
         run: |
-          mypy . --exclude build
+          mypy . --exclude build --exclude mayhem
 
       - name: Run tests
         run: |
